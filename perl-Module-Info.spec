@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Module
-%define	pnam	Info
+%define		pdir	Module
+%define		pnam	Info
 Summary:	Module::Info perl module - information about Perl modules
 Summary(pl):	Modu³ perla Module::Info - informacje o modu³ach Perla
 Name:		perl-Module-Info
