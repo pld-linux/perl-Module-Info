@@ -7,8 +7,8 @@
 Summary:	Module::Info perl module - information about Perl Modules
 Summary(pl):	Modu³ perla Module::Info - informacje o modu³ach perla
 Name:		perl-Module-Info
-Version:	0.16
-Release:	2
+Version:	0.18
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
