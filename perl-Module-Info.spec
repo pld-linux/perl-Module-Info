@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Module
@@ -8,18 +8,19 @@
 Summary:	Module::Info perl module - information about Perl modules
 Summary(pl):	Modu³ perla Module::Info - informacje o modu³ach perla
 Name:		perl-Module-Info
-Version:	0.23
+Version:	0.24
 Release:	1
-License:	?
+# same as perl
+License:	GPL or Artistic
 Vendor:		Mattia Barbon <MBARBON@cpan.org>
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5f826353ff8a14946f76ddf13608a120
-BuildRequires:	perl-devel >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
+# Source0-md5:	7100fd4384f105f76e2133212ef393d3
+%if %{with tests}
 #BuildRequires:	perl-B-Utils
 BuildRequires:	perl(File::Spec) >= 0.8
 %endif
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Conflicts:	perl-B-Utils
 BuildArch:	noarch
@@ -43,12 +44,13 @@ powinno dzia³aæ z dowolnym kodem w Perlu.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
