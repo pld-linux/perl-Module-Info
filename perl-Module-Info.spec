@@ -1,17 +1,19 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Module
 %define	pnam	Info
-Summary:	Module::Info perl module - information about Perl Modules
+Summary:	Module::Info perl module - information about Perl modules
 Summary(pl):	Modu³ perla Module::Info - informacje o modu³ach perla
 Name:		perl-Module-Info
-Version:	0.18
+Version:	0.19
 Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Vendor:		Mattia Barbon <MBARBON@cpan.org>
 BuildRequires:	perl >= 5.6
 %if %{?_without_tests:0}%{!?_without_tests:1}
 #BuildRequires:	perl-B-Utils
