@@ -11,7 +11,7 @@ Name:		perl-Module-Info
 Version:	0.24
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Vendor:		Mattia Barbon <MBARBON@cpan.org>
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
