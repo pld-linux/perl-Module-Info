@@ -9,7 +9,7 @@ Summary:	Module::Info perl module - information about Perl modules
 Summary(pl):	Modu³ perla Module::Info - informacje o modu³ach Perla
 Name:		perl-Module-Info
 Version:	0.24
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Vendor:		Mattia Barbon <MBARBON@cpan.org>
