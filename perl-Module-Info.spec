@@ -17,7 +17,7 @@ BuildRequires:	perl >= 5.6
 #BuildRequires:	perl-B-Utils
 BuildRequires:	perl(File::Spec) >= 0.8
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Conflicts:	perl-B-Utils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
