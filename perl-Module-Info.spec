@@ -6,7 +6,7 @@
 %define		pdir	Module
 %define		pnam	Info
 Summary:	Module::Info perl module - information about Perl modules
-Summary(pl):	Modu≥ perla Module::Info - informacje o modu≥ach Perla
+Summary(pl.UTF-8):   Modu≈Ç perla Module::Info - informacje o modu≈Çach Perla
 Name:		perl-Module-Info
 Version:	0.30
 Release:	1
@@ -31,10 +31,10 @@ Module::Info gives you information about Perl modules without actually
 loading the module. It actually isn't specific to modules and should
 work on any perl code.
 
-%description -l pl
-Module::Info podaje informacje o modu≥ach Perla bez wczytywania
-modu≥u. Dzia≥anie to w≥a∂ciwie nie jest ograniczone do modu≥Ûw i
-powinno dzia≥aÊ z dowolnym kodem w Perlu.
+%description -l pl.UTF-8
+Module::Info podaje informacje o modu≈Çach Perla bez wczytywania
+modu≈Çu. Dzia≈Çanie to w≈Ça≈õciwie nie jest ograniczone do modu≈Ç√≥w i
+powinno dzia≈Çaƒá z dowolnym kodem w Perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
