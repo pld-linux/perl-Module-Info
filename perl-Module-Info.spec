@@ -6,7 +6,7 @@
 %define		pdir	Module
 %define		pnam	Info
 Summary:	Module::Info perl module - information about Perl modules
-Summary(pl.UTF-8):   Moduł perla Module::Info - informacje o modułach Perla
+Summary(pl.UTF-8):	Moduł perla Module::Info - informacje o modułach Perla
 Name:		perl-Module-Info
 Version:	0.30
 Release:	1
