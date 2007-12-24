@@ -12,10 +12,10 @@ Version:	0.31
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
-Vendor:		Mattia Barbon <MBARBON@cpan.org>
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c891812ff4ab0ab3c851ecfa0812a18c
+URL:		http://search.cpan.org/dist/Module-Info/
 %if %{with tests}
 #BuildRequires:	perl-B-Utils
 BuildRequires:	perl(File::Spec) >= 0.8
