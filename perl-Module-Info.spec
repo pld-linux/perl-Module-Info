@@ -8,13 +8,13 @@
 Summary:	Module::Info perl module - information about Perl modules
 Summary(pl.UTF-8):	Moduł perla Module::Info - informacje o modułach Perla
 Name:		perl-Module-Info
-Version:	0.32
+Version:	0.33
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Module/MBARBON/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	6af6f7859d959eac9f85dda8896d2d51
+Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	422824cc46ba6b571f2319ba1cf5f2f9
 URL:		http://search.cpan.org/dist/Module-Info/
 %if %{with tests}
 #BuildRequires:	perl-B-Utils
