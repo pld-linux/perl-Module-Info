@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Module
 %define		pnam	Info
@@ -14,13 +14,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	72dd1a99bc124a97888cbbedc37993ca
-URL:		http://search.cpan.org/dist/Module-Info/
+URL:		https://metacpan.org/release/Module-Info
 %if %{with tests}
-BuildRequires:	perl(B::Utils) >= 0.27
 BuildRequires:	perl(File::Spec) >= 0.8
+BuildRequires:	perl-B-Utils >= 0.27
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
