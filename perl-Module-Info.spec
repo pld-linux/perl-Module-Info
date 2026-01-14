@@ -8,7 +8,7 @@ Summary:	Module::Info perl module - information about Perl modules
 Summary(pl.UTF-8):	Moduł perla Module::Info - informacje o modułach Perla
 Name:		perl-Module-Info
 Version:	0.37
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
