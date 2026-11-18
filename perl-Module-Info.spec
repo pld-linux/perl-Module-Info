@@ -7,13 +7,13 @@
 Summary:	Module::Info perl module - information about Perl modules
 Summary(pl.UTF-8):	Moduł perla Module::Info - informacje o modułach Perla
 Name:		perl-Module-Info
-Version:	0.37
-Release:	2
+Version:	0.39
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	72dd1a99bc124a97888cbbedc37993ca
+# Source0-md5:	0901a22c409d7104e39954b533215399
 URL:		https://metacpan.org/release/Module-Info
 %if %{with tests}
 BuildRequires:	perl(File::Spec) >= 0.8
